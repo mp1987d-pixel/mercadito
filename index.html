@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercadito Online</title>
+    <title>Mercadito La Pasionaria</title>
     <style>
         :root {
             --bg-color: #fcfcfc;       /* Un fondo casi blanco, limpio */
@@ -490,12 +490,16 @@
             transform: translateY(0);
         }
     </style>
+    <link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <header>
-        <h1>Mercadito de Sabores</h1>
-        <p>¡Bienvenidos a nuestro mercadito virtual, un espacio de economía cercana impulsado por alimentos de producción biodinámica y orgánica de Granja Nova y La Choza! Hacé tu pedido por este medio, luego contactanos al 1131828626 por Whatsapp para coordinar el pago y la entrega; ¡no te lo pierdas!</p>
+        <h1 style="font-family: 'Style+Script', cursive;">Mercadito La Pasionaria</h1>
+        <p>¡Bienvenidos al mercadito La Pasionaria, conectando productores y productoras para traer productos biodinámicos y agroecológicos de Granja Nova y La Choza! Hacé tu pedido por este medio, luego contactanos al 1131828626 por Whatsapp para coordinar el pago y la entrega; ¡no te lo pierdas!</p>
     </header>
 
     <div class="container">
@@ -571,19 +575,21 @@
     <script>
         const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw_7gc7GRVdY3Ob4h4zHEFFAXSom31JsrzHfiDO8EWqYfph8ZhzUQCAT6syAFxYJ5tuCg/exec";
 
-        const products = [
-            { id: "yogur_vainilla", name: "Yogur entero con extracto de vainilla", desc: "Artesanal e irresistible.", img: "yogurvainilla.jpg", variants: [{ name: "1 kg", price: 10900 }, { name: "500 gr", price: 6500 }] },
-            { id: "yogur_frutilla", name: "Yogur entero con confitura de Frutilla", desc: "Con trozos de fruta seleccionada.", img: "yogurfrutilla.jpg", variants: [{ name: "1 kg", price: 10900 }, { name: "500 gr", price: 6500 }] },
-            { id: "yogur_natural", name: "Yogur Natural Entero", desc: "Puro, cremoso y natural.", img: "yogurnatural.jpg", variants: [{ name: "1 kg", price: 9800 }, { name: "500 gr", price: 6300 }] },
+         const products = [
+            { id: "yogur_vainilla", name: "Yogur entero con extracto de vainilla", desc: "Artesanal e irresistible.", img: "yogurvainilla.jpg", variants: [{ name: "1 kg", price: 11700 }, { name: "500 gr", price: 7000 }] },
+            { id: "yogur_frutilla", name: "Yogur entero con confitura de Frutilla", desc: "Con trozos de fruta seleccionada.", img: "yogurfrutilla.jpg", variants: [{ name: "1 kg", price: 11700 }, { name: "500 gr", price: 7000 }] },
+            { id: "yogur_natural", name: "Yogur Natural Entero", desc: "Puro, cremoso y natural.", img: "yogurnatural.jpg", variants: [{ name: "1 kg", price: 10500 }, { name: "500 gr", price: 6800 }] },
             { id: "yogur_endulzado", name: "Yogur Natural Endulzado", desc: "El balance justo de dulzura.", img: "yogurendulzado.jpg", variants: [{ name: "1 kg", price: 9800 }] },
-            { id: "yogur_descremado", name: "Yogur Natural Descremado", desc: "Liviano sin perder la cremosidad.", img: "yogurdescremado.jpg", variants: [{ name: "1 kg", price: 9800 }, { name: "500 gr", price: 6300 }] },
-            { id: "yogur_durazno", name: "Yogur Entero con confitura de durazno", desc: "Dulce y fresco sabor frutal.", img: "yogurdurazno.jpg", variants: [{ name: "1 kg", price: 10900 }, { name: "500 gr", price: 6500 }] },
-            { id: "queso_sardo", name: "Queso Sardo", desc: "Ideal para rallar o picar.", img: "quesosardo.jpg", variants: [{ name: "500 gr", price: 17400 }] },
-            { id: "queso_reggianito", name: "Queso Reggianito", desc: "Sabor maduro y tradicional.", img: "quesoreggianito.jpg", variants: [{ name: "500/600 gr", price: 20100 }, { name: "Media Horma (2 kg)", price: 35200 }] },
-            { id: "queso_fynbo", name: "Queso Fynbo", desc: "Textura suave y ojos perfectos.", img: "quesofynbo.jpg", variants: [{ name: "600 gr", price: 20800 }, { name: "Horma (2.1 kg)", price: 30200 }] },
-            { id: "queso_crema", name: "Queso Cream", desc: "Súper untable y fresco.", img: "quesocrema.jpg", variants: [{ name: "350 gr", price: 8800 }] },
-            { id: "crema_cultivada", name: "Crema Cultivada", desc: "Un toque gourmet para tus comidas.", img: "cremacultivada.jpg", variants: [{ name: "350 ml", price: 8800 }] },
-            { id: "manteca", name: "Manteca (el verdadero oro)", desc: "Calidad artesanal insuperable.", img: "manteca.jpg", variants: [{ name: "250 gr", price: 13500 }, { name: "1 kg", price: 38200 }] },
+            { id: "yogur_descremado", name: "Yogur Natural Descremado", desc: "Liviano sin perder la cremosidad.", img: "yogurdescremado.jpg", variants: [{ name: "1 kg", price: 10500 }, { name: "500 gr", price: 6800 }] },
+            { id: "yogur_durazno", name: "Yogur Entero con confitura de durazno", desc: "Dulce y fresco sabor frutal.", img: "yogurdurazno.jpg", variants: [{ name: "1 kg", price: 11700 }, { name: "500 gr", price: 7000 }] },
+            { id: "yogur_griego", name: "Yogur Griego", desc: "", img: "griego.jpeg", variants: [{ name: "350 gr", price: 10700 }] },
+            { id: "queso_sardo", name: "Queso Sardo", desc: "Ideal para rallar o picar.", img: "quesosardo.jpg", variants: [{ name: "500 gr", price: 18800 }] },
+            { id: "ricota", name: "Ricota", desc: "", img: "ricota.jpeg", variants: [{ name: "500 gr", price: 9000 }] },
+            { id: "cuartirolo", name: "Queso Cuartirolo", desc: "", img: "cuartirolo.jpeg", variants: [{ name: "700/800 gr", price: 18300 }, { name: "Horma (3.5 kg)", price: 75950 }] },
+            { id: "queso_reggianito", name: "Queso Reggianito", desc: "Sabor maduro y tradicional.", img: "quesoreggianito.jpg", variants: [{ name: "500/600 gr", price: 21700 }, { name: "Media Horma (2 kg)", price: 82400 }] },
+            { id: "queso_fynbo", name: "Queso Fynbo", desc: "Textura suave y ojos perfectos.", img: "quesofynbo.jpg", variants: [{ name: "600 gr", price: 22400 }, { name: "Horma (2 kg)", price: 65200 }] },
+            { id: "queso_crema", name: "Queso Crema", desc: "Súper untable y fresco.", img: "quesocrema.jpg", variants: [{ name: "350 gr", price: 9500 }] },
+            { id: "crema_cultivada", name: "Crema Cultivada", desc: "Un toque gourmet para tus comidas.", img: "cremacultivada.jpg", variants: [{ name: "350 ml", price: 9500 }] },
             { id: "pepinos", name: "Pepinos Agridulces en rodajas", desc: "¡Un rico pancito tostado y nada te frena a este manjar!", img: "pepinos.jpg", variants: [{ name: "550 gr", price: 10400 }] },
             { id: "ddl", name: "Dulce de leche artesanal", desc: "¡Pasa a ser el paladar privilegiado!", img: "dulcedeleche.jpg", variants: [{ name: "450 gr", price: 7200 }] },
             { id: "membrillo", name: "Dulce de Membrillo", desc: "Un clásico pero con identidad propia.", img: "dulcemembrillo.jpg", variants: [{ name: "450 gr", price: 7800 }] },
